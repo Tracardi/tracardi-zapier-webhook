@@ -59,7 +59,7 @@ def register() -> Plugin:
                 "url": None,
                 "timeout": 30
             },
-            version="0.1",
+            version="0.1.1",
             author="Risto Kowaczewski",
             license="MIT",
             manual="discord_zapier_action"

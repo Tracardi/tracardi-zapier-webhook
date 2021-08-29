@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='tracardi-zapier-webhook',
-    version='0.1.1',
+    version='0.1.2',
     description='This plugin calls zapier webhook.',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -14,9 +14,9 @@ setup(
     packages=['tracardi_zapier_webhook'],
     install_requires=[
         'tracardi_plugin_sdk',
-        'pydantic~=1.8.2',
-        'asyncio~=3.4.3',
-        'aiohttp~=3.7.4.post0'
+        'pydantic',
+        'asyncio',
+        'aiohttp'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

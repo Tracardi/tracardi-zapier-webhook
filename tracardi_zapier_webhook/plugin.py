@@ -62,7 +62,7 @@ def register() -> Plugin:
             version="0.1.2",
             author="Risto Kowaczewski",
             license="MIT",
-            manual="discord_zapier_action"
+            manual="zapier_webhook_action"
         ),
         metadata=MetaData(
             name='Zapier webhook',

@@ -59,7 +59,7 @@ def register() -> Plugin:
                 "url": None,
                 "timeout": 30
             },
-            version="0.1.2",
+            version="0.1.3",
             author="Risto Kowaczewski",
             license="MIT",
             manual="zapier_webhook_action"

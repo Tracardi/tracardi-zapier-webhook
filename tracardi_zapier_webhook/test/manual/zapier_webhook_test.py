@@ -1,22 +1,17 @@
-import asyncio
-
 from tracardi_zapier_webhook.plugin import ZapierWebHookAction
+from tracardi_plugin_sdk.service.plugin_runner import run_plugin
 
+init = {
+    "url": "http://localhost:8686/healthcheck",
+    "body": "\"test\""
+}
 
-async def main():
-    init = {
-        "url": "https://hooks.zapier.com/hooks/catch/10556728/b4b22sz/"
-    }
+plugin = ZapierWebHookAction(**init)
 
-    plugin = ZapierWebHookAction(**init)
+payload = {
+    "content": "send message\nssdasd",
+    "username": "risto"
+}
 
-    payload = {
-        "content": "send message\nssdasd",
-        "username": "risto"
-    }
-
-    results = await plugin.run(payload)
-    print(results)
-
-
-asyncio.run(main())
+results = run_plugin(ZapierWebHookAction, init, payload)
+print(results)

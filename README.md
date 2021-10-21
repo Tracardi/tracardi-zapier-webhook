@@ -1,4 +1,4 @@
-# Discord zapier plugin
+# Zapier plugin
 
 This plugin calls zapier webhook API.
 
@@ -6,7 +6,9 @@ This plugin calls zapier webhook API.
 
 ```json
 {
-  "url": "https://hooks.zapier.com/hooks/catch/10523213728/b4basesz/"
+  "url": "https://hooks.zapier.com/hooks/catch/10523213728/b4basesz/",
+  "body": "<json as string>",
+  "timeout": 10
 }
 ```
 
@@ -26,7 +28,7 @@ Valid response is:
 {
   "status": 200,
   "content": {
-    ... response as json
+    <response as json>
   }
 }
 ```

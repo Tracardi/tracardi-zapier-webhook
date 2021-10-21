@@ -13,7 +13,8 @@ setup(
     author_email='risto.kowaczewski@gmail.com',
     packages=['tracardi_zapier_webhook'],
     install_requires=[
-        'tracardi_plugin_sdk',
+        'tracardi-plugin-sdk>=0.6.22',
+        'tracardi-dot-notation',
         'pydantic',
         'asyncio',
         'aiohttp'

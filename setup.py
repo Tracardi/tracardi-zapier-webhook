@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='tracardi-zapier-webhook',
-    version='0.1.3',
+    version='0.6.0',
     description='This plugin calls zapier webhook.',
     long_description=long_description,
     long_description_content_type="text/markdown",

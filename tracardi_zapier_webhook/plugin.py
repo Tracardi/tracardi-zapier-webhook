@@ -91,7 +91,7 @@ def register() -> Plugin:
                         ),
                     ])
             ]),
-            version="0.1.3",
+            version="0.6.0",
             author="Risto Kowaczewski",
             license="MIT",
             manual="zapier_webhook_action"

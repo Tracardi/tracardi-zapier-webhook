@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='tracardi-zapier-webhook',
-    version='0.6.0',
+    version='0.6.0.1',
     description='This plugin calls zapier webhook.',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -13,7 +13,7 @@ setup(
     author_email='risto.kowaczewski@gmail.com',
     packages=['tracardi_zapier_webhook'],
     install_requires=[
-        'tracardi-plugin-sdk>=0.6.22',
+        'tracardi-plugin-sdk>=0.6.30',
         'tracardi-dot-notation',
         'pydantic',
         'asyncio',
